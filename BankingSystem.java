@@ -5,6 +5,10 @@ public class BankingSystem {
     private Scanner userIn = new Scanner(System.in);
     private ArrayList<Account> accounts = new ArrayList<Account>();
 
+    public ArrayList<Account> getAccounts() {
+        return accounts;
+    }
+
     public void createAccount() {
         System.out.println("Enter account name: ");
         String name = userIn.nextLine();
@@ -65,7 +69,7 @@ public class BankingSystem {
         }
     }
 
-    private Account findAccount(String accountNumber) {
+    public Account findAccount(String accountNumber) {
         for (Account account : accounts) {
             if (account.getAccountNumber().equals(accountNumber)) {
                 return account;
@@ -74,7 +78,7 @@ public class BankingSystem {
         return null;
     }
 
-    private String generateAccountNumber() {
+    public String generateAccountNumber() {
         return "ACCT" + (accounts.size() + 1);
     }
 
