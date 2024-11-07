@@ -78,7 +78,7 @@ public class BankingAppGUI extends JFrame {
                 String accountNumber = bankSystem.generateAccountNumber();
                 Account newAccount = new Account(name, accountNumber, initialBalance, pin);
                 bankSystem.getAccounts().add(newAccount);
-                JOptionPane.showMessageDialog(this, "Account created successfully!");
+                JOptionPane.showMessageDialog(this, "Account created successfully!. Here is your account number: " + accountNumber);
             } else {
                 JOptionPane.showMessageDialog(this, "PIN cannot be empty!");
             }

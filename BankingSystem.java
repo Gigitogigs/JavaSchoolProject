@@ -23,6 +23,8 @@ public class BankingSystem {
         Account newAccount = new Account( name, accountNumber, accountBalance, pin);
         accounts.add(newAccount);
 
+        System.out.println("Your account has been created. Here is your account number: " + accountNumber);
+
     }
 
     //deposit
