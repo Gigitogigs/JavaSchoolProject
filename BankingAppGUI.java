@@ -18,7 +18,7 @@ public class BankingAppGUI extends JFrame {
         setTitle("Banking Application");
         setSize(800, 400); // Set the window size
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS)); // Vertical flow layout
+        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS)); // Use vertical layout
 
         // Account Creation Fields
         add(new JLabel("Account Name:"));
